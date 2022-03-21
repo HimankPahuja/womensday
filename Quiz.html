@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            font-size:30px;
+        }
+    #div5{
+        background-color: blue;
+        color: white;
+        border-style: groove;
+    }
+    #div6{
+        background-color: blue;
+        color: white;
+        border-style: groove;
+    }
+    #div7{
+        background-color: blue;
+        color: white;
+        border-style: groove;
+    }
+    #div8{
+        background-color: blue;
+        color: white;
+        border-style: groove;
+    }
+    .abc{
+        display: inline;/*It helps to make all items in one line*/
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    </style>
+    
+</head>
+<body>
+    <nav>
+        <ul style="list-style-type: none;background-color:white;">
+            <img src="https://s3-us-west-2.amazonaws.com/internationalwomensday/home/InternationalWomensDaylogo.png">
+              <li class="abc">
+              </li>
+              <li class="abc">
+                <a class="pqr" href="index.html">Home</a>
+              <li class="abc">
+                <a class="pqr" href="About.html">About Woman's Day</a>
+              </li>
+              <li class="abc">
+                <a class="pqr" href="Tradition.html">Tradition</a>
+              </li>
+              <li class="abc">
+                <a class="pqr" href="Quiz.html">Quiz</a>
+              </li>
+          </ul> 
+    </nav>
+    <div id="div5">
+        <h2>What is the theme of 2021 women's day?</h2>
+        <input type="radio" name="o1">The United Nations has stated that it would celebrate the day with the theme "“Gender equality today for a sustainable tomorrow”.<br/>
+        <input type="radio" name="o1">Womens are bad or maybe ok<br/>
+        <input type="radio" name="o1">Sustainable Future<br/>
+        <input type="button" value="Click here to check" onclick="A1()"><br/>
+        <b><p id="c1" style="color: lime;"></p></b><br/>
+        <b><p id="w1" style="color:pink;"></p></b><br/>
+    </div>
+    <div id="div6">
+        <h2>When was women's Day first celebrated in India?</h2>
+        <input type="radio" name="o2">The first national women's day was observed in the US on February 28, 1909.<br/>
+        <input type="radio" name="o2">The first national women's day was observed in the US on February 13 1920<br/>
+        <input type="radio" name="o2">The first national women's day was observed in the US on May 12 1990<br/>
+        <input type="button" value="Click here to check" onclick="A2()"><br/>
+        <b><p id="c2" style="color: lime;"></p></b><br/>
+        <b><p id="w2" style="color:pink;"></p></b><br/>
+    </div>
+    <div id="div7">
+        <h2>Slogan of Women's Day 2021</h2>
+        <input type="radio" name="o3">Women in leadership: Achieving an equal future in a COVID-19 world.<br/>
+        <input type="radio" name="o3">Stay in Office and do work<br/>
+        <input type="radio" name="o3">Go to Shopping with brothers<br/>
+        <input type="button" value="Click here to check" onclick="A3()"><br/>
+        <b><p id="c3" style="color: lime;"></p></b><br/>
+        <b><p id="w3" style="color:pink;"></p></b><br/>
+    </div>
+    <div id="div8">
+        <h2>Color of Womens Day</h2>
+        <input type="radio" name="o4">Purple, Green and White<br/>
+        <input type="radio" name="o4">Black, Yellow, Red<br/>
+        <input type="radio" name="o4">White, Green, Burlywood<br/>
+        <input type="button" value="Click here to check" onclick="A4()"><br/>
+        <b><p id="c4" style="color: lime;"></p></b><br/>
+        <b><p id="w4" style="color:pink;"></p></b><br/>
+    </div>
+    <script>
+        function A1()
+        {
+            var aa=document.getElementsByName("o1")
+            if(aa[0].checked==true)
+            {
+                document.getElementById("c1").innerHTML="Correct Answer"
+                document.getElementById("w1").innerHTML=""
+            }
+            else if(aa[1].checked==true)
+            {
+                document.getElementById("w1").innerHTML="Wrong Answer"
+                document.getElementById("c1").innerHTML="";
+            }
+            else if(aa[2].checked==true)
+            {
+                document.getElementById("w1").innerHTML="Wrong Answer"
+                document.getElementById("c1").innerHTML="";
+            }
+            else{
+                document.getAnimations("w1").indexOf="Wrong Answer"
+                document.getElementById("c1").innerHTML="";
+            }
+        }
+
+        function A2()
+        {
+            var ab=document.getElementsByName("o2")
+            if(ab[0].checked==true)
+            {
+                document.getElementById("c2").innerHTML="Correct Answer"
+                document.getElementById("w2").innerHTML=""
+            }
+            else if(ab[1].checked==true)
+            {
+                document.getElementById("w2").innerHTML="Wrong Answer"
+                document.getElementById("c2").innerHTML="";
+            }
+            else if(ab[2].checked==true)
+            {
+                document.getElementById("w2").innerHTML="Wrong Answer"
+                document.getElementById("c2").innerHTML="";
+            }
+            else{
+                document.getAnimations("w2").indexOf="Wrong Answer"
+                document.getElementById("c2").innerHTML="";
+            }
+        }
+        function A3()
+        {
+            var ac=document.getElementsByName("o3")
+            if(ac[0].checked==true)
+            {
+                document.getElementById("c3").innerHTML="Correct Answer"
+                document.getElementById("w3").innerHTML=""
+            }
+            else if(ac[1].checked==true)
+            {
+                document.getElementById("w3").innerHTML="Wrong Answer"
+                document.getElementById("c3").innerHTML="";
+            }
+            else if(ac[2].checked==true)
+            {
+                document.getElementById("w3").innerHTML="Wrong Answer"
+                document.getElementById("c3").innerHTML="";
+            }
+            else{
+                document.getAnimations("w3").indexOf="Wrong Answer"
+                document.getElementById("c3").innerHTML="";
+            }
+        }
+        function A4()
+        {
+            var ad=document.getElementsByName("o4")
+            if(ad[0].checked==true)
+            {
+                document.getElementById("c4").innerHTML="Correct Answer"
+                document.getElementById("w4").innerHTML=""
+            }
+            else if(ad[1].checked==true)
+            {
+                document.getElementById("w4").innerHTML="Wrong Answer"
+                document.getElementById("c4").innerHTML="";
+            }
+            else if(ad[2].checked==true)
+            {
+                document.getElementById("w4").innerHTML="Wrong Answer"
+                document.getElementById("c4").innerHTML="";
+            }
+            else{
+                document.getAnimations("w4").indexOf="Wrong Answer"
+                document.getElementById("c4").innerHTML="";
+            }
+        }
+
+
+    </script>
+</body>
+</html>

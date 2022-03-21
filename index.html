@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+        body{
+            font-size: 30px;
+        }
+        .abc{
+        display: inline;/*It helps to make all items in one line*/
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      .pqr:hover{
+          color: pink;
+          font-size: 35px;
+      }
+      #div1{
+        background-image: url("https://res.cloudinary.com/dwzmsvp7f/image/fetch/q_75,f_auto,w_1316/https%3A%2F%2Fmedia.insider.in%2Fimage%2Fupload%2Fc_crop%2Cg_custom%2Fv1614773597%2Fkhyret5wseiou6oaagv9.jpg");
+        height: 600px;
+        width: 100%;
+        background-size: cover;
+        animation-name: woman;
+        animation-duration: 10s;/*It is used to specify the time duration of animation*/
+        animation-iteration-count: infinite;/*It is used to speicify how many times you want the animation to run*/
+        animation-direction: alternate;/*It is used to specify the flow of animation*/
+      }
+      @keyframes woman{
+          0%{background-image: url("https://internationalwomensday.s3.us-west-2.amazonaws.com/images/2022/IWD2022-breakthebias-homepic-main7.jpg");background-size: cover;}
+          25%{background-image: url("https://internationalwomensday.s3.us-west-2.amazonaws.com/images/2022/IWD2022-giving-appeal.jpg");background-size: cover;}
+          50%{background-image: url("https://internationalwomensday.s3.us-west-2.amazonaws.com/images/2022/IWD2022-breakthebias-homepic-feel.jpg");background-size: cover;}
+          75%{background-image: url("https://internationalwomensday.s3.us-west-2.amazonaws.com/images/2022/IWD2022-breakthebias-homepic-events8.jpg");background-size: cover;}
+          100%{background-image: url("https://internationalwomensday.s3.us-west-2.amazonaws.com/images/2022/IWD2022-breakthebias-homepic-resources2.jpg");background-size: cover;}
+      }
+      #container{
+          height: 1200px;
+          width:100%;
+          display: grid;/*It is used to put divisions of container in Grid*/
+          grid-template-columns: auto auto auto;/*It is used to specify in how many columns we want to arrange divisions*/
+          grid-column-gap: 50px;/*It is used to give gaps between the columns*/
+          grid-row-gap: 50px;/*It is used to give gaps between rows*/
+      }
+    </style>
+</head>
+<body>
+    <title>Womens Day</title>
+    
+    <nav>
+        <ul style="list-style-type: none;background-color:white;">
+            <img src="https://s3-us-west-2.amazonaws.com/internationalwomensday/home/InternationalWomensDaylogo.png">
+              <li class="abc">
+              </li>
+              <li class="abc">
+                <a class="pqr" href="index.html">Home</a>
+              <li class="abc">
+                <a class="pqr" href="About.html">About Woman's Day</a>
+              </li>
+              <li class="abc">
+                <a class="pqr" href="Tradition.html">Tradition</a>
+              </li>
+              <li class="abc">
+                <a class="pqr" href="Quiz.html">Quiz</a>
+              </li>
+          </ul> 
+    </nav>
+    <div id="div1">
+        <h1 style="color: white;font-size: 70px;padding-top: 300px;padding-left: 50px;">HAPPY WOMAN"S DAY !!!!</h1>
+    </div>
+    <div id="container">
+      <div>
+        <img src="https://internationalwomensday.s3-us-west-2.amazonaws.com/images/IWD-Mission-Work-home.jpg">
+        <p>Build workplaces where women thrive</p>
+      </div>
+      <div>
+        <img src="https://internationalwomensday.s3-us-west-2.amazonaws.com/upload/12345-p-33204.jpg">
+        <p>Elevate visibility of women creatives </p>
+      </div>
+      <div>
+        <img src="https://internationalwomensday.s3-us-west-2.amazonaws.com/images/IWD-Mission-Tech2-home2.jpg">
+        <p>Improve equality for women in tech </p>
+      </div>
+      <div>
+        <img src="https://internationalwomensday.s3-us-west-2.amazonaws.com/images/IWD-Mission-Business-home.jpg">
+        <p>Forge women's empowerment worldwide </p>
+      </div>
+      <div>
+        <img src="https://internationalwomensday.s3.us-west-2.amazonaws.com/images/JohnDeere-Women-Agriculture.jpg">
+        <p>Celebrate the women forging change </p>
+      </div>
+      <div>
+        <img src="https://internationalwomensday.s3-us-west-2.amazonaws.com/images/IWD-Mission-Health-home.jpg">
+        <p>Empower women's choices in health </p>
+      </div>
+    </div>
+
+    
+</body>
+</html>
